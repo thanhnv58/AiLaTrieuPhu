@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/atp__activity_player_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_main_menu"
+        android:orientation="vertical"
+>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginBottom="32dp"
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/atp_icon_retry"
+        />
+    </RelativeLayout>
+
+
+    <ImageView
+            android:id="@+id/img_button_trial_play"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/atp__button_trial_normal"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/line_oranger"
+    />
+
+    <TextView
+            android:id="@+id/txt_btn_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:background="@drawable/high_score_click"
+            android:layout_gravity="center_horizontal"
+            android:text="High Score"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:textSize="16dp"
+    />
+
+
+
+</LinearLayout>
