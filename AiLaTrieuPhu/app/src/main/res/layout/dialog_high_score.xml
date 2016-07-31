@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:background="@drawable/atp__dialog_confirm_background"
+>
+    <TextView
+            android:id="@+id/txt_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score"
+            android:textColor="@color/color_text"
+            android:textSize="32dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+    />
+    <ImageView
+            android:id="@+id/img_cup"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:src="@drawable/cup_high_score"
+            android:layout_below="@id/txt_high_score"
+            android:layout_marginBottom="8dp"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_cup"
+            android:gravity="center"
+    >
+        <ImageView
+                android:id="@+id/img_user_high_score"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/atp__achievement_bai_khong_nan"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="4dp"
+        />
+        <TextView
+                android:id="@+id/txt_user_high_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jony Bancel"
+                android:textSize="22dp"
+                android:textColor="@color/color_text"
+                android:layout_toRightOf="@id/img_user_high_score"
+                android:layout_alignTop="@id/img_user_high_score"
+                android:layout_marginTop="4dp"
+        />
+
+        <ImageView
+                android:id="@+id/img_level_high_score"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/atp__activity_profile_icon_achievement"
+                android:layout_marginRight="22dp"
+                android:layout_below="@id/img_user_high_score"
+                android:layout_marginBottom="4dp"
+        />
+        <TextView
+                android:id="@+id/txt_level_high_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 14"
+                android:textSize="22dp"
+                android:textColor="@color/color_text"
+                android:layout_below="@id/txt_user_high_score"
+                android:layout_toRightOf="@id/img_level_high_score"
+                android:layout_alignTop="@id/img_level_high_score"
+                android:layout_marginTop="4dp"
+        />
+        <ImageView
+                android:id="@+id/img_money_high_score"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/atp__activity_profile_icon_money"
+                android:layout_marginRight="22dp"
+                android:layout_below="@id/img_level_high_score"
+        />
+        <TextView
+                android:id="@+id/txt_money_high_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.000.000 d"
+                android:textSize="22dp"
+                android:textColor="@color/color_text"
+                android:layout_below="@id/txt_level_high_score"
+                android:layout_toRightOf="@id/img_money_high_score"
+                android:layout_alignTop="@id/img_money_high_score"
+                android:layout_marginTop="4dp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

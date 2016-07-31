@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/atp__activity_player_background"
+        android:weightSum="5"
+>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/color_playing_toolbar"
+    >
+        <com.thanhnv.ailatrieuphu.CircularImageView
+                android:id="@+id/img_user"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/face_user"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+        />
+        <TextView
+                android:id="@+id/txt_name_player_playing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyen Thanh"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/img_user"
+                android:layout_centerVertical="true"
+        />
+
+        <ProgressBar
+                android:id="@+id/progress_time_down"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:max="30"
+                android:progress="0"
+                android:rotation="-90"
+                android:progressDrawable="@drawable/progress_time_down"
+        />
+
+        <TextView
+                android:id="@+id/txt_time_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                android:layout_centerInParent="true"
+        />
+
+        <TextView
+                android:id="@+id/txt_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:textColor="@color/color_text"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+        />
+
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/atp__achievement_ban_la_trieu_phu"
+                android:layout_toLeftOf="@id/txt_money"
+                android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+    >
+        <ImageView
+                android:id="@+id/img_stop_game"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/atp__activity_player_button_image_help_stop"
+        />
+
+        <ImageView
+                android:id="@+id/img_change_question"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/atp__activity_player_button_image_help_change_question"
+        />
+
+        <ImageView
+                android:id="@+id/img_50_50"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/atp__activity_player_button_image_help_5050"
+        />
+
+        <ImageView
+                android:id="@+id/img_audients"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/atp__activity_player_button_image_help_audience"
+        />
+
+        <ImageView
+                android:id="@+id/img_call_your_friend"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/atp__activity_player_button_image_help_call"
+        />
+    </TableRow>
+
+    <include
+            layout="@layout/question_layout"
+    />
+
+    <TableRow
+            android:id="@+id/tr_case_a"
+            android:layout_width="236dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/atp__activity_player_layout_play_answer_background_normal"
+    >
+        <TextView
+                android:id="@+id/txt_case_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_text"
+                android:textSize="16dp"
+        />
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr_case_b"
+            android:layout_width="236dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/atp__activity_player_layout_play_answer_background_normal"
+    >
+        <TextView
+                android:id="@+id/txt_case_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text"
+                android:textSize="16dp"
+        />
+
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr_case_c"
+            android:layout_width="236dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/atp__activity_player_layout_play_answer_background_normal"
+    >
+        <TextView
+                android:id="@+id/txt_case_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text"
+                android:textSize="16dp"
+        />
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr_case_d"
+            android:layout_width="236dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/atp__activity_player_layout_play_answer_background_normal"
+    >
+        <TextView
+                android:id="@+id/txt_case_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text"
+                android:textSize="16dp"
+        />
+    </TableRow>
+
+
+</LinearLayout>
